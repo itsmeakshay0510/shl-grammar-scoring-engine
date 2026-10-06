@@ -1,0 +1,2 @@
+experiment_id,date,description,hypothesis,data_version,features,representation,model,hyperparameters,cv_strategy,seed,train_rmse,oof_rmse,oof_pearson,oof_rmse_std,oof_pearson_std,status,decision,notes
+E000,2026-10-06,Mean baseline,"Predicting the training mean for every sample defines the floor performance any model must beat. Pearson is 0 by definition.",v1,none,none,MeanPredictor,{},RepeatedKFold(5x5 seed=42),42,TBD,TBD,0.0000,TBD,TBD,pending,baseline,"Populate train_rmse and oof_rmse in Phase 01 after loading labels."

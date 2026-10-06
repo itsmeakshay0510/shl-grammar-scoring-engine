@@ -1,0 +1,52 @@
+# ==============================================================
+# SHL Grammar Scoring Engine — Python Dependencies
+# ==============================================================
+# Pinned at MINOR version to balance reproducibility and security.
+# Run: pip install -r requirements.txt
+#
+# Environment: Python 3.10+
+# ==============================================================
+
+# ------ Core numeric stack ------
+numpy>=1.26,<2.0
+scipy>=1.11,<2.0
+pandas>=2.1,<3.0
+
+# ------ Machine learning ------
+scikit-learn>=1.4,<2.0
+lightgbm>=4.3,<5.0
+xgboost>=2.0,<3.0
+catboost>=1.2,<2.0
+
+# ------ Audio processing ------
+librosa>=0.10,<1.0
+soundfile>=0.12,<1.0
+
+# ------ NLP / Text ------
+# Language-tool-python and readability libs added in Phase 04
+# Transformers and sentence-transformers added in Phase 05
+# (sizes not fixed until compute environment is known)
+
+# ------ Utilities ------
+tqdm>=4.66,<5.0
+joblib>=1.3,<2.0
+
+# ------ Notebook / visualization ------
+jupyter>=1.0
+matplotlib>=3.8,<4.0
+seaborn>=0.13,<1.0
+
+# ------ Experiment tracking ------
+# (No MLflow / W&B by default — CSV log is sufficient for this competition.
+#  Add here if we decide to upgrade tracking in a later phase.)
+
+# ==============================================================
+# DEFERRED — will be added when the phase requires them:
+# ==============================================================
+# openai-whisper          # Phase 02 — ASR
+# transformers            # Phase 05 — embeddings
+# sentence-transformers   # Phase 05 — semantic embeddings
+# torch                   # Phase 02+ — model inference
+# language-tool-python    # Phase 04 — grammar checking
+# textstat                # Phase 04 — readability metrics
+# ==============================================================
