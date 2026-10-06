@@ -64,13 +64,10 @@ shl-grammar-scoring/
 ## Quickstart
 
 ```bash
-# 1. Clone and enter the project
-cd shl-grammar-scoring
-
-# 2. Create and activate a virtual environment
+# 1. Create and activate a virtual environment
 python -m venv .venv
 source .venv/bin/activate        # Linux/macOS
-# .venv\Scripts\activate.bat     # Windows
+# .venv\Scripts\Activate.ps1     # Windows PowerShell
 
 # 3. Install dependencies
 pip install -r requirements.txt
